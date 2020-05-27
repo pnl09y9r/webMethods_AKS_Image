@@ -3,7 +3,7 @@ FROM centos:7
 MAINTAINER SoftwareAG
 
 RUN set -x && \
-    curl -s -S https://archive.apache.org/dist/activemq/$ACTIVEMQ_VERSION/$ACTIVEMQ-bin.tar.gz | tar xvz -C /opt && \
+    curl -s -S https://github.com/pnl09y9r/webMethods_Container_Image.git/ | tar xvz -C /opt && \
 
 COPY ./jvm/jvm/ /sag/jvm/jvm/
 ENV JAVA_HOME /sag/jvm/jvm
