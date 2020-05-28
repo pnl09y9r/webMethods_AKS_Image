@@ -1,1 +1,2 @@
-FROM WeEuS03DevAcrAksc01.azurecr.io/varun/is:latest
+FROM store/softwareag/webmethods-microservicesruntime:10.5
+COPY * /opt/softwareag/IntegrationServer/packages
